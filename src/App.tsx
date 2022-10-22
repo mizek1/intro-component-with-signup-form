@@ -1,4 +1,4 @@
-import Form from './components/Form';
+import SignupForm from './components/SignupForm';
 import './styles/app.less';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <aside>
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </aside>
-        <Form></Form>
+        <SignupForm></SignupForm>
       </section>
     </main>
   );
