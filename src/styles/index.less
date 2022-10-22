@@ -1,0 +1,45 @@
+@red: hsl(0, 100%, 74%);
+@green: hsl(154, 59%, 51%);
+@blue: hsl(248, 32%, 49%);
+@dark-blue: hsl(249, 10%, 26%);
+@grayish-blue: hsl(246, 25%, 77%);
+@white: hsl(0, 0%, 100%);
+
+:root {
+  font-family: Poppins, Inter, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: @white;
+  background: url(bg-intro-mobile.png) @red;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url(bg-intro-desktop.png) @red;
+  }
+}
+
+#root {
+  width: 85%;
+}
